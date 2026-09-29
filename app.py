@@ -54,7 +54,8 @@ embeddings = GoogleGenerativeAIEmbeddings(
 
 uploaded_file = st.file_uploader(
     "Upload your Resume PDF",
-    type=["pdf"]
+    type=["pdf"],
+    key="resume_uploader"
 )
 
 
