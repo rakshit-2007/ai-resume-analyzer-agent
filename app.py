@@ -249,7 +249,7 @@ st.write("Upload your resume and let AI analyze your skills, education, projects
 # Gemini API
 # --------------------------------------------------
 
-GOOGLE_API_KEY = st.secrets["GEMINI_API_KEY"]
+GOOGLE_API_KEY = os.environ["GEMINI_API_KEY"]
 
 llm = ChatGoogleGenerativeAI(
     model="gemma-4-31b-it",
